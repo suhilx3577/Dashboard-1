@@ -6,12 +6,11 @@ import jwtDecode from 'jwt-decode';
 import gicon from '../icons/gicon.jpg'
 import aicon from '../icons/aicon.jpg'
 
-
-
-
+import {useNavigate} from 'react-router-dom'
 
 const LoginPage = () => {
 
+  const navigate = useNavigate();
   const[details, setDetails] = useState({})
 
   const handleGoogleLogin = useGoogleLogin({
@@ -19,6 +18,8 @@ const LoginPage = () => {
       const a = tokenResponse;
       setDetails(a);
       console.log(a);
+      navigate('/dashboard');
+
     },
     onError: console.log('login Failed')
   })
