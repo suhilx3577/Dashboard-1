@@ -8,11 +8,13 @@ module.exports = {
         bgtwo: '#FFFFFF',
         bgthree : '#EAEAEA',
         sectext: '#858585',
+        box1:'#DDEFE0',
       },
       fontFamily :{
         greatVibes : 'Great Vibes',
         mont:'Montserrat',
         lato:'Lato',
+        opensans:'Open Sans'
       }
     },
   },
